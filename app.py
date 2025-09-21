@@ -80,4 +80,4 @@ def create_post():
     return jsonify({'msg': 'created', 'id': post.id}), 201
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
