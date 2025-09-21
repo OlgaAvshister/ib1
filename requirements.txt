@@ -1,0 +1,6 @@
+﻿Flask
+Flask-JWT-Extended
+Flask-SQLAlchemy
+Flask-Bcrypt
+python-dotenv
+MarkupSafe

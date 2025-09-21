@@ -1,0 +1,39 @@
+﻿# Виртуальное окружение
+venv/
+ENV/
+env/
+
+# Python кэш
+__pycache__/
+*.py[cod]
+*.class
+
+# Конфигурационные файлы
+.env
+*.env
+
+# Системные файлы
+.DS_Store
+Thumbs.db
+
+# IDE/редактор
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Логи
+*.log
+
+# SQLite базы (если не хотите хранить в репозитории)
+*.db
+
+# Pytest кэш
+.pytest_cache/
+
+# Node.js, если есть
+node_modules/
+
+# Coverage
+htmlcov/
+.coverage
