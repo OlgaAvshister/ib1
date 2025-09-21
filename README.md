@@ -86,11 +86,17 @@ HTML-теги экранируются → защита от XSS.
   - Flask debug mode отключен.
 
 ## CI/CD (GitHub Actions)
-- Workflow находится в .github/workflows/ci.yml.
+1. Workflow находится в .github/workflows/ci.yml.
 
-- Настроен запуск SAST и SCA:
+2. Настроен запуск SAST и SCA:
 
   - Bandit — статический анализ Python-кода.
   - Safety — проверка зависимостей на известные уязвимости.
 
-- Каждое изменение в main автоматически запускает проверки.
+3. Каждое изменение в main автоматически запускает проверки.
+
+### Отчёты SAST/SCA
+<img width="952" height="760" alt="image" src="https://github.com/user-attachments/assets/43207f92-c8c2-4a37-b304-e04314dc315a" />
+<img width="658" height="515" alt="image" src="https://github.com/user-attachments/assets/f4b266f0-6c22-4b2a-a6c7-2826dab4dee5" />
+
+
