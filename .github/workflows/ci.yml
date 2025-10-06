@@ -1,4 +1,4 @@
-﻿name: CI
+name: CI
 
 on:
   push:
@@ -29,8 +29,16 @@ jobs:
 
       - name: Run SAST (Bandit)
         run: |
-          bandit -r . -lll
+          bandit -r . -f json -o bandit-report.json | tee bandit-report.json
 
       - name: Run SCA (Safety)
         run: |
-          safety check
+          safety check --json | tee safety-report.json
+
+      - name: Upload security reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: security-reports
+          path: |
+            bandit-report.json
+            safety-report.json
